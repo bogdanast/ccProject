@@ -1,0 +1,15 @@
+/* CSS declarations go here */
+.post{
+    font-size:20px;
+    border: 10px red solid;
+    padding: 50px;
+    color: gold;
+}
+.delete{
+    float: right;
+    font-weight: bold;
+    background: none;
+    font-size: 1em;
+    border: none;
+    position: relative;
+}
