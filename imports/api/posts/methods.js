@@ -14,7 +14,6 @@ Meteor.methods({
         return Posts.findOne({_id: _id})
     },
     'post.edit'(_id, editedData) {
-
         Posts.update({_id: _id}, {$set: editedData})
     },
     'post.remove'(_id) {

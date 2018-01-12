@@ -1,5 +1,5 @@
 import React from 'react';
-import {AutoForm, TextField, LongTextField,ErrorField} from 'uniforms-unstyled';
+import {AutoForm, TextField, LongTextField, ErrorField} from 'uniforms-unstyled';
 import createEditSchema from '/imports/ui/pages/post/createPostSchema';
 import router from '/imports/routing/router';
 
@@ -8,7 +8,7 @@ export default class PostEdit extends React.Component {
         super(props);
         this.handleEditSubmit = this.handleEditSubmit.bind(this);
         this.postId = FlowRouter.current().params._id;
-        console.log(FlowRouter.current().params._id);
+
         this.state = {
             post: null,
             loading: true
@@ -36,6 +36,7 @@ export default class PostEdit extends React.Component {
     }
 
     render() {
+        console.log(FlowRouter.current().params._id);
         const {loading, post} = this.state;
         if (loading) {
             return <div>Loading...</div>

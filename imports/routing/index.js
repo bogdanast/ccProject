@@ -11,4 +11,4 @@ route('/login', Login);
 route('/post/create', PostCreate);
 route('/post/list', PostList);
 route('/post/edit/:_id', PostEdit);
-route("/post/comment", CommentView)
+route("/post/comment", CommentView);

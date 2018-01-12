@@ -11,15 +11,16 @@ Posts.before.insert(function (userId, post) {
     console.log(post);
 });
 
-Posts.before.update(function (userId,post,modifier){
-    console.log(post);
-    console.log('Inainte');
-    post.$set = post.$set || {};
-    post.$set.updatedAt= new Date();
+Posts.before.update(function (userId, post, fieldNames, modifier) {
+    // console.log(post);
+    console.log(modifier);
+    // console.log('Inainte');
+    modifier.$set = modifier.$set || {};
+    modifier.$set.updatedAt= new Date();
     //modifier.$set = modifier.$set || {};
     //modifier.$set.updatedAt = new Date();
     console.log("OBIECTUL IN SINE DUPA UPDATE");
-    console.log(post);
+    console.log(modifier);
 });
 
 

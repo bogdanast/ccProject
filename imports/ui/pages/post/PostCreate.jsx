@@ -8,14 +8,15 @@ export default class PostCreate extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleLogout=this.handleLogout.bind(this);
+        this.handleLogout = this.handleLogout.bind(this);
     }
 
     handleSubmit(data) {
         console.log(data);
         Meteor.call('post.create', data);
     }
-    handleLogout(){
+
+    handleLogout() {
         Meteor.logout((err) => {
             if (!err) {
                 alert("Contul s-a delogat cu succes!");
@@ -34,7 +35,7 @@ export default class PostCreate extends React.Component {
                 <button type='submit'> Add post</button>
                 <button type='button' onClick={this.handleLogout}>Logout</button>
             </AutoForm>
-            <PostList />
+            <PostList/>
         </div>);
     }
 }
