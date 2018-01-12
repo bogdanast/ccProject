@@ -29,7 +29,7 @@ export default class CommentView extends React.Component {
 
 
     render() {
-        const {postId} = this.props
+        const {postId} = this.props;
         const comments = Comments.find();
         return (
             <div>
@@ -50,7 +50,15 @@ export default class CommentView extends React.Component {
                             </div>
                         })
                     }
-                </div>) : (<div>{this.commentList(postId)}</div>)
+                </div>) : (
+                    <div>{
+                        _.map(this.commentList(postId), (comment) => {
+                            return (
+                                <div> {comment.text} </div>
+                            )
+                        })
+                    }</div>
+                )
                 }
             </div>
 

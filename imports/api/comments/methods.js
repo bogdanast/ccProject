@@ -4,7 +4,9 @@ import Comments from '/imports/api/comments/collection'
 console.log("COMMENTS METHOD");
 Meteor.methods({
     'comment.list'(postId) {
-        return Comments.find({postId: postId});
+        const comments = Comments.find({postId: postId}).fetch();
+        console.log(comments);
+        return comments;
     },
     'comment.add'(data) {
         if (!this.userId) {
