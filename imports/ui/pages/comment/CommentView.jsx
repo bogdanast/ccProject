@@ -9,6 +9,7 @@ export default class CommentView extends React.Component {
         super(props);
         this.handleSubmitComment = this.handleSubmitComment.bind(this);
         this.removeComment = this.removeComment.bind(this);
+        this.commentList = this.commentList.bind(this);
     }
 
     handleSubmitComment(data, postId) {
@@ -32,33 +33,25 @@ export default class CommentView extends React.Component {
         const comments = Comments.find();
         return (
             <div>
-                <AutoForm schema={CommentInsertSchema}
-                          onSubmit={event => this.handleSubmitComment(event, postId)}>
+                {Meteor.userId() ? ( <div>
+                    <AutoForm schema={CommentInsertSchema}
+                              onSubmit={event => this.handleSubmitComment(event, postId)}>
 
-                    <LongTextField name='text'/>
-                    <button type='submit'> Add Comment</button>
-                </AutoForm>
+                        <LongTextField name='text'/>
+                        <button type='submit'> Add Comment</button>
+                    </AutoForm>
 
-                {
-                    comments.map(comment => {
-                        return <div key={comment._id}> {comment.text}
-                            <button className="delete" onClick={() => this.removeComment(comment._id)}>
-                                &times;
-                            </button>
-                        </div>
-                    })
-
-
-                }
-                <div>
                     {
-                        Meteor.userId() ? : (
-                            <div>sunt logat </div>
-                        ) : (
-                        <div>nu sunt logat  </div>
-                        )
+                        comments.map(comment => {
+                            return <div key={comment._id}> {comment.text}
+                                <button className="delete" onClick={() => this.removeComment(comment._id)}>
+                                    &times;
+                                </button>
+                            </div>
+                        })
                     }
-                </div>
+                </div>) : (<div>{this.commentList(postId)}</div>)
+                }
             </div>
 
         );
