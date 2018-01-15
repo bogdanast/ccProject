@@ -4,6 +4,7 @@ import {withTracker} from 'meteor/react-meteor-data';
 import router from '/imports/routing/router';
 import CommentView from "../comment/CommentView";
 import Comments from '/imports/api/comments/collection'
+import _ from 'underscore';
 
 class PostList extends React.Component {
     constructor(props) {
@@ -47,7 +48,7 @@ class PostList extends React.Component {
             <div>
                 <h1>Componenta PostList</h1>
                 {
-                    posts.map(post => {
+                    _.map(posts, (post) => {
                         return <div key={post._id}
                                     className={'post'}>{post.title + ' ' + post.description}
                             {this.isPostOwner(post) &&

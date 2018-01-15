@@ -13,3 +13,9 @@
     border: none;
     position: relative;
 }
+.comment-style{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    witdh:10px;
+    height:30px;
+}
