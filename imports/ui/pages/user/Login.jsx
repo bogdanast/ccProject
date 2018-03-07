@@ -13,10 +13,6 @@ export default class Login extends React.Component {
         const password = data.password;
         Meteor.loginWithPassword(email, password, (err) => {
             if (!err) {
-                // return Meteor.absoluteUrl('/afterlogin');
-                //  FlowRouter.go('/');
-                console.log('This email:'+ email +' was a success');
-                console.log(Meteor.userId());
                 router.go('/post/create');
             } else {
                 console.log(err);
@@ -27,7 +23,7 @@ export default class Login extends React.Component {
     logout(){
         Meteor.logout((err) => {
             if (!err) {
-               console.log("CONTUL S_A DELOGAT CU SUCCESs!");
+               console.log("CONTUL S-A DELOGAT CU SUCCESS!");
             } else {
                 console.log(err);
             }

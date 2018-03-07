@@ -1,16 +1,11 @@
 import {Meteor} from 'meteor/meteor';
-import Posts from '/imports/api/posts/collection'
-
-console.log("AFUERA");
+import UsersService from '/imports/api/users/userService'
 
 Meteor.methods({
     'user.register'(data) {
-        return Accounts.createUser({
-            email: data.email,
-            password: data.password
-        })
+        UsersService.userRegister(data);
     },
     'user.remove' () {
-        Meteor.users.remove(this.userId);
+        UsersService.userRemove(this.userId);
     }
 });

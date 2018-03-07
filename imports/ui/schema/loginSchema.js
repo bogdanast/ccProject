@@ -7,5 +7,5 @@ export default new SimpleSchema({
     },
     password: {
         type: String
-       }
+    }
 })

@@ -1,5 +1,5 @@
 import {Mongo} from 'meteor/mongo';
-import CommentsSchema from '/imports/api/comments/schema'
+import CommentsSchema from '/imports/db/comments/schema'
 
 const Comments = new Mongo.Collection('comments');
 Comments.attachSchema(CommentsSchema);

@@ -1,9 +1,9 @@
 import React from 'react';
-import Posts from '/imports/api/posts/collection'
+import Posts from '/imports/db/posts/collection'
 import {withTracker} from 'meteor/react-meteor-data';
 import router from '/imports/routing/router';
 import CommentView from "../comment/CommentView";
-import Comments from '/imports/api/comments/collection'
+import Comments from '/imports/db/comments/collection'
 import _ from 'underscore';
 
 class PostList extends React.Component {
@@ -25,21 +25,14 @@ class PostList extends React.Component {
 
     editPost = (_id) => {
         router.go('/post/edit/:_id', {_id: _id});
-        console.log("ID ul postului este: " + _id);
     }
     postRemove = (postId) => {
-        console.log("Id ul postului sters este : " + postId);
         Meteor.call('post.remove', postId);
-        console.log("am apasat butonul delete!");
     }
 
     render() {
 
         const {loading, posts, comments} = this.props;
-        console.log('loading este ' + loading);
-        console.log(posts);
-        //console.log(comments);
-
         if (loading) {
             return <div>Waiting for the method</div>
         }

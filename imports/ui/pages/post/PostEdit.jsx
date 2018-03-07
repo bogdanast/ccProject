@@ -10,39 +10,38 @@ export default class PostEdit extends React.Component {
         this.postId = FlowRouter.current().params._id;
 
         this.state = {
-            post: null,
+            postEdit: null,
             loading: true
         }
 
     }
 
     componentDidMount() {
-        Meteor.call('post.get', this.postId, (err, post) => {
-            this.setState({
-                post,
-                loading: false
-            })
+        Meteor.call('post.get', this.postId, (err, res) => {
+            if (!err) {
+                this.setState({
+                    postEdit: res,
+                    loading: false
+                })
+            }
         })
     }
 
     handleEditSubmit = (editedData) => {
-        console.log(editedData);
         Meteor.call('post.edit', this.postId, editedData, (err) => {
             if (!err) {
                 router.go('/post/list');
             }
         });
-        console.log("AM APASAT BUTON EDIT!!");
     }
 
     render() {
-        console.log(FlowRouter.current().params._id);
-        const {loading, post} = this.state;
+        const {loading, postEdit} = this.state;
         if (loading) {
             return <div>Loading...</div>
         }
         return (<div>
-                <AutoForm schema={createEditSchema} onSubmit={this.handleEditSubmit} model={post}>
+                <AutoForm schema={createEditSchema} onSubmit={this.handleEditSubmit} model={postEdit}>
                     <TextField name='title'/>
                     <ErrorField name='title'/>
                     <LongTextField name='description'/>

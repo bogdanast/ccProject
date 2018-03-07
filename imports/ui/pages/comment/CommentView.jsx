@@ -1,7 +1,7 @@
 import React from 'react';
 import { AutoForm, LongTextField } from 'uniforms-unstyled';
 import CommentInsertSchema from '/imports/ui/pages/comment/schema';
-import Comments from '/imports/api/comments/collection';
+import Comments from '/imports/db/comments/collection';
 import _ from 'underscore';
 
 export default class CommentView extends React.Component {
@@ -10,7 +10,7 @@ export default class CommentView extends React.Component {
 
         this.handleSubmitComment = this.handleSubmitComment.bind(this);
         this.removeComment = this.removeComment.bind(this);
-        //this.commentList = this.commentList.bind(this);
+        this.checkIfYouCanDeleteUsersComment = this.checkIfYouCanDeleteUsersComment.bind(this);
 
         this.state = {
             comments: []
@@ -19,12 +19,11 @@ export default class CommentView extends React.Component {
 
     handleSubmitComment(data, postId) {
         data.postId = postId;
-        console.log(data);
         Meteor.call('comment.add', data)
+
     }
 
     removeComment(commentId) {
-        console.log(commentId);
         Meteor.call('comment.remove', commentId);
     }
 
@@ -38,9 +37,17 @@ export default class CommentView extends React.Component {
         });
     }
 
+    checkIfYouCanDeleteUsersComment(commentUserId){
+        // if(commentUserId === Meteor.userId()){
+        //     return true;
+        // }
+        console.log(commentUserId);
+       return commentUserId === Meteor.userId();
+
+    }
+
     render() {
         const {postId} = this.props;
-        //const owner = Meteor.user().emails;
         return (
             <div>
                 {
@@ -60,9 +67,9 @@ export default class CommentView extends React.Component {
                                                 return (
                                                     <div className="comment" key={comment._id}>
                                                         <div className="delete-comment">
-                                                            <button className='delete'onClick={() => this.removeComment(comment._id)}>
+                                                            { this.checkIfYouCanDeleteUsersComment(comment.userId) && <button className='delete'onClick={() => this.removeComment(comment._id)}>
                                                                 &times;
-                                                            </button>
+                                                            </button> }
                                                         </div>
                                                         <div className="comment-style">
                                                             {comment.text }

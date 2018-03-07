@@ -8,7 +8,6 @@ export default class Register extends React.Component{
         this.handleRegister=this.handleRegister.bind(this);
     }
     handleRegister(data) {
-        console.log( data);
         Meteor.call('user.register', data, (err) => {
             if(err) {
                 alert(err.reason);
