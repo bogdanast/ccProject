@@ -2,34 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b884aac5-06ac-4307-b964-dd9371e9ce97" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/comments/comment.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/comments/getComments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/posts/getPost.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/posts/posts.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/api/users/userService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/comments/links.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/posts/links.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/users/links.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/comments/collection.js" afterPath="$PROJECT_DIR$/imports/db/comments/collection.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/comments/hooks.js" afterPath="$PROJECT_DIR$/imports/db/comments/hooks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/comments/schema.js" afterPath="$PROJECT_DIR$/imports/db/comments/schema.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/posts/collection.js" afterPath="$PROJECT_DIR$/imports/db/posts/collection.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/posts/hooks.js" afterPath="$PROJECT_DIR$/imports/db/posts/hooks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/posts/schema.js" afterPath="$PROJECT_DIR$/imports/db/posts/schema.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/users/hooks.js" afterPath="$PROJECT_DIR$/imports/db/users/hooks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/hooks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/links.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/db/users/collection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/comments/getComments.js" afterPath="$PROJECT_DIR$/imports/api/comments/queries/getComments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/imports/api/posts/getPost.js" afterPath="$PROJECT_DIR$/imports/api/posts/queries/getPost.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/comments/comment.service.js" afterPath="$PROJECT_DIR$/imports/api/comments/comment.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/comments/methods.js" afterPath="$PROJECT_DIR$/imports/api/comments/methods.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/methods.js" afterPath="$PROJECT_DIR$/imports/api/posts/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/publication.js" afterPath="$PROJECT_DIR$/imports/api/posts/publication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/posts.service.js" afterPath="$PROJECT_DIR$/imports/api/posts/posts.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/users/methods.js" afterPath="$PROJECT_DIR$/imports/api/users/methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/users/userService.js" afterPath="$PROJECT_DIR$/imports/api/users/userService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/db/comments/hooks.js" afterPath="$PROJECT_DIR$/imports/db/comments/hooks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/db/posts/hooks.js" afterPath="$PROJECT_DIR$/imports/db/posts/hooks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/db/posts/links.js" afterPath="$PROJECT_DIR$/imports/db/posts/links.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/db/users/hooks.js" afterPath="$PROJECT_DIR$/imports/db/users/hooks.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/index.js" afterPath="$PROJECT_DIR$/imports/startup/server/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/post/PostCreate.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/post/PostCreate.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/post/PostList.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/post/PostList.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/user/Login.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/user/Login.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/user/Register.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/user/Register.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/schema/loginSchema.js" afterPath="$PROJECT_DIR$/imports/ui/schema/loginSchema.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,21 +39,11 @@
       <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/api/posts/methods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostEdit.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -68,60 +51,60 @@
       <file leaf-file-name="posts.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/api/posts/posts.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hooks.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/db/posts/hooks.js">
+      <file leaf-file-name="PostEdit.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getPost.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/api/posts/getPost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getComments.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/api/comments/getComments.js">
+        <entry file="file://$PROJECT_DIR$/imports/api/posts/queries/getPost.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/api/comments/comment.service.js">
+      <file leaf-file-name="getComments.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/comments/queries/getComments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+            <state relative-caret-position="162">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="links.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/db/posts/links.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="methods.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/api/comments/methods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="25" selection-end-column="3" />
+            <state relative-caret-position="84">
+              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -129,13 +112,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/api/users/methods.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/db/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,10 +127,22 @@
       <file leaf-file-name="CommentView.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="69" column="102" lean-forward="true" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+            <state relative-caret-position="54">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hooks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/db/hooks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,6 +170,7 @@
       <find>user.register</find>
       <find>user.remove</find>
       <find>console.log</find>
+      <find>Meteor.users</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/imports</dir>
@@ -187,10 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imports/routing/router.js" />
-        <option value="$PROJECT_DIR$/startup/server/index.js" />
-        <option value="$PROJECT_DIR$/imports/ui/App.jsx" />
-        <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/startup/client/index.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
@@ -219,22 +211,29 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/post/PostList.jsx" />
         <option value="$PROJECT_DIR$/imports/db/comments/collection.js" />
         <option value="$PROJECT_DIR$/imports/db/posts/collection.js" />
-        <option value="$PROJECT_DIR$/imports/startup/server/index.js" />
         <option value="$PROJECT_DIR$/imports/api/comments/links.js" />
         <option value="$PROJECT_DIR$/imports/db/comments/links.js" />
         <option value="$PROJECT_DIR$/imports/db/users/links.js" />
-        <option value="$PROJECT_DIR$/imports/db/posts/links.js" />
-        <option value="$PROJECT_DIR$/imports/api/posts/posts.service.js" />
-        <option value="$PROJECT_DIR$/imports/api/users/userService.js" />
         <option value="$PROJECT_DIR$/imports/api/posts/getPost.js" />
+        <option value="$PROJECT_DIR$/imports/api/comments/comment.service.js" />
+        <option value="$PROJECT_DIR$/imports/db/hooks.js" />
+        <option value="$PROJECT_DIR$/imports/db/index.js" />
+        <option value="$PROJECT_DIR$/imports/db/links.js" />
+        <option value="$PROJECT_DIR$/imports/startup/server/index.js" />
+        <option value="$PROJECT_DIR$/imports/api/users/methods.js" />
+        <option value="$PROJECT_DIR$/imports/api/users/userService.js" />
+        <option value="$PROJECT_DIR$/imports/api/posts/posts.service.js" />
+        <option value="$PROJECT_DIR$/imports/db/comments/hooks.js" />
+        <option value="$PROJECT_DIR$/imports/db/posts/hooks.js" />
+        <option value="$PROJECT_DIR$/imports/db/users/collection.js" />
+        <option value="$PROJECT_DIR$/imports/db/users/hooks.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx" />
+        <option value="$PROJECT_DIR$/imports/db/posts/links.js" />
         <option value="$PROJECT_DIR$/imports/api/posts/methods.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx" />
-        <option value="$PROJECT_DIR$/imports/db/posts/hooks.js" />
-        <option value="$PROJECT_DIR$/imports/api/comments/comment.service.js" />
-        <option value="$PROJECT_DIR$/imports/api/users/methods.js" />
-        <option value="$PROJECT_DIR$/imports/api/comments/methods.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx" />
         <option value="$PROJECT_DIR$/imports/api/comments/getComments.js" />
+        <option value="$PROJECT_DIR$/imports/api/comments/methods.js" />
       </list>
     </option>
   </component>
@@ -271,87 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-              <item name="posts" type="cbb8eebc:String" user="posts" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-              <item name="users" type="cbb8eebc:String" user="users" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="routing" type="cbb8eebc:String" user="routing" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="startup" type="cbb8eebc:String" user="startup" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="startup" type="cbb8eebc:String" user="startup" />
-              <item name="server" type="cbb8eebc:String" user="server" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="ui" type="cbb8eebc:String" user="ui" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="ui" type="cbb8eebc:String" user="ui" />
-              <item name="pages" type="cbb8eebc:String" user="pages" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="imports" type="cbb8eebc:String" user="imports" />
-              <item name="ui" type="cbb8eebc:String" user="ui" />
-              <item name="pages" type="cbb8eebc:String" user="pages" />
-              <item name="post" type="cbb8eebc:String" user="post" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
-              <item name="server" type="cbb8eebc:String" user="server" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -382,7 +300,23 @@
               <item name="ccProject" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="comments" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ccProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ccProject" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ccProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ccProject" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ccProject" type="b2602c69:ProjectViewProjectNode" />
@@ -473,6 +407,87 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="api" type="cbb8eebc:String" user="api" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="api" type="cbb8eebc:String" user="api" />
+              <item name="posts" type="cbb8eebc:String" user="posts" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="api" type="cbb8eebc:String" user="api" />
+              <item name="users" type="cbb8eebc:String" user="users" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="routing" type="cbb8eebc:String" user="routing" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="startup" type="cbb8eebc:String" user="startup" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="startup" type="cbb8eebc:String" user="startup" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="ui" type="cbb8eebc:String" user="ui" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="ui" type="cbb8eebc:String" user="ui" />
+              <item name="pages" type="cbb8eebc:String" user="pages" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="imports" type="cbb8eebc:String" user="imports" />
+              <item name="ui" type="cbb8eebc:String" user="ui" />
+              <item name="pages" type="cbb8eebc:String" user="pages" />
+              <item name="post" type="cbb8eebc:String" user="post" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ccProject" type="cbb8eebc:String" user="ccProject" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -486,11 +501,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imports/api/posts/queries" />
+      <recent name="$PROJECT_DIR$/imports/api/comments/queries" />
       <recent name="$PROJECT_DIR$/imports/db/users" />
       <recent name="$PROJECT_DIR$/imports/db/posts" />
       <recent name="$PROJECT_DIR$/imports/db/comments" />
-      <recent name="$PROJECT_DIR$/imports/api/comments" />
-      <recent name="$PROJECT_DIR$/imports" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,15 +593,17 @@
       <workItem from="1518617401487" duration="691000" />
       <workItem from="1518686079776" duration="2894000" />
       <workItem from="1520323886382" duration="29340000" />
-      <workItem from="1520424056671" duration="7126000" />
+      <workItem from="1520424056671" duration="9004000" />
+      <workItem from="1520497261275" duration="6601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276245000" />
+    <option name="totallyTimeSpent" value="284724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18831877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -596,7 +613,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4237695" sideWeight="0.49779493" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39135653" sideWeight="0.49779493" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -625,35 +642,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/user/Register.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="237" column="16" lean-forward="false" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html" />
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -785,36 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/users/hooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/users/links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/posts/publication.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -845,46 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/comments/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/comments/hooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/comments/links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/db/comments/schema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/posts/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,88 +817,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/posts/links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/users/userService.js">
+    <entry file="file://$PROJECT_DIR$/server/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/posts/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/posts/posts.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/db/posts/hooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/posts/getPost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/comments/comment.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+        <state relative-caret-position="90">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/users/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/comments/methods.js">
+    <entry file="file://$PROJECT_DIR$/imports/api/users/userService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="288">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/comments/links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/comments/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/users/links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/posts/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/users/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/users/hooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/comments/hooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/posts/hooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/posts/links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/posts/posts.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/db/hooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/post/PostEdit.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/comments/queries/getComments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/posts/queries/getPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/posts/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -985,19 +1025,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/comment/CommentView.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="69" column="102" lean-forward="true" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+        <state relative-caret-position="54">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="21" selection-end-column="40" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/comments/getComments.js">
+    <entry file="file://$PROJECT_DIR$/imports/api/comments/methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="84">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

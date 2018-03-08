@@ -1,23 +1,22 @@
-import {Meteor} from "meteor/meteor";
-import _ from "underscore";
-import Posts from '/imports/db/posts/collection'
+import {Posts} from '/imports/db'
 
-class PostService{
-    postCreate(post){
+class PostService {
+    create(post) {
         Posts.insert(post);
     }
 
-    postEdit(_id, editedData){
+    edit(_id, editedData) {
         Posts.update({_id: _id}, {$set: editedData})
     }
 
-    postRemove(_id){
+    remove(_id) {
         Posts.remove({_id: _id})
     }
 
-    postGet(_id){
-       return Posts.findOne({_id: _id})
+    get(_id) {
+        return Posts.findOne({_id: _id})
     }
 
 }
+
 export default new PostService()

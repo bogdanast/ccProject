@@ -6,7 +6,7 @@ Meteor.users.addLinks({
         collection: Posts,
         inversedBy: 'user',
     },
-    'comments':{
+    'comments': {
         collection: Comments,
         inversedBy: 'user',
     }

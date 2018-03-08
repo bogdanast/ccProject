@@ -1,5 +1,5 @@
 import React from 'react';
-import { AutoForm, LongTextField } from 'uniforms-unstyled';
+import {AutoForm, LongTextField} from 'uniforms-unstyled';
 import CommentInsertSchema from '/imports/ui/pages/comment/schema';
 import Comments from '/imports/db/comments/collection';
 import _ from 'underscore';
@@ -37,13 +37,8 @@ export default class CommentView extends React.Component {
         });
     }
 
-    checkIfYouCanDeleteUsersComment(commentUserId){
-        // if(commentUserId === Meteor.userId()){
-        //     return true;
-        // }
-        console.log(commentUserId);
-       return commentUserId === Meteor.userId();
-
+    checkIfYouCanDeleteUsersComment(commentUserId) {
+        return commentUserId === Meteor.userId();
     }
 
     render() {
@@ -53,7 +48,8 @@ export default class CommentView extends React.Component {
                 {
                     Meteor.userId() ? (
                         <div>
-                            <AutoForm schema={CommentInsertSchema} onSubmit={event => this.handleSubmitComment(event, postId)}>
+                            <AutoForm schema={CommentInsertSchema}
+                                      onSubmit={event => this.handleSubmitComment(event, postId)}>
                                 <LongTextField name='text'/>
                                 <button type='submit'>
                                     Add Comment
@@ -67,12 +63,14 @@ export default class CommentView extends React.Component {
                                                 return (
                                                     <div className="comment" key={comment._id}>
                                                         <div className="delete-comment">
-                                                            { this.checkIfYouCanDeleteUsersComment(comment.userId) && <button className='delete'onClick={() => this.removeComment(comment._id)}>
+                                                            {this.checkIfYouCanDeleteUsersComment(comment.userId) &&
+                                                            <button className='delete'
+                                                                    onClick={() => this.removeComment(comment._id)}>
                                                                 &times;
-                                                            </button> }
+                                                            </button>}
                                                         </div>
                                                         <div className="comment-style">
-                                                            {comment.text }
+                                                            {comment.text}
                                                         </div>
                                                     </div>
                                                 )
@@ -97,7 +95,7 @@ export default class CommentView extends React.Component {
                                                 return (
                                                     <div className="comment">
                                                         <div className="comment-style">
-                                                            { comment.text }
+                                                            {comment.text}
                                                         </div>
                                                     </div>
                                                 )

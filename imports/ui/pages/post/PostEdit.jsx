@@ -10,7 +10,7 @@ export default class PostEdit extends React.Component {
         this.postId = FlowRouter.current().params._id;
 
         this.state = {
-            postEdit: null,
+            post: null,
             loading: true
         }
 
@@ -20,7 +20,7 @@ export default class PostEdit extends React.Component {
         Meteor.call('post.get', this.postId, (err, res) => {
             if (!err) {
                 this.setState({
-                    postEdit: res,
+                    post: res,
                     loading: false
                 })
             }
@@ -36,12 +36,12 @@ export default class PostEdit extends React.Component {
     }
 
     render() {
-        const {loading, postEdit} = this.state;
+        const {loading, post} = this.state;
         if (loading) {
             return <div>Loading...</div>
         }
         return (<div>
-                <AutoForm schema={createEditSchema} onSubmit={this.handleEditSubmit} model={postEdit}>
+                <AutoForm schema={createEditSchema} onSubmit={this.handleEditSubmit} model={post}>
                     <TextField name='title'/>
                     <ErrorField name='title'/>
                     <LongTextField name='description'/>

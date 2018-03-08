@@ -1,4 +1,4 @@
-import Comments from '/imports/db/comments/collection'
+import {Comments} from '/imports/db'
 
 Comments.before.insert(function (userId, comment) {
     comment.userId = userId;

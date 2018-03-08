@@ -1,6 +1,7 @@
-import Posts from '/imports/db/posts/collection'
+import {Posts} from '/imports/db'
+import {Users} from '/imports/db'
 
-Meteor.users.after.remove(function (userId, user) {
+Users.after.remove(function (userId) {
     Posts.remove({
         userId: userId,
     });

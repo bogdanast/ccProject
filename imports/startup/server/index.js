@@ -1,11 +1,7 @@
 import '/imports/api/users/methods'
 import '/imports/api/posts/methods'
 import '/imports/api/posts/publication'
-import '/imports/db/posts/hooks'
-import '/imports/db/users/hooks'
 import '/imports/api/comments/methods'
-import '/imports/db/comments/hooks'
-import '/imports/db/comments/links'
-import '/imports/db/posts/links'
-import '/imports/db/users/links'
+import '/imports/db/links'
+import '/imports/db/hooks'
 

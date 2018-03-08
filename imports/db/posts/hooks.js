@@ -1,4 +1,4 @@
-import Posts from '/imports/db/posts/collection'
+import {Posts} from '/imports/db'
 
 Posts.before.insert(function (userId, post) {
     post.createdAt = new Date();
@@ -7,6 +7,6 @@ Posts.before.insert(function (userId, post) {
 
 Posts.before.update(function (userId, post, fieldNames, modifier) {
     modifier.$set = modifier.$set || {};
-    modifier.$set.updatedAt= new Date();
+    modifier.$set.updatedAt = new Date();
 });
 

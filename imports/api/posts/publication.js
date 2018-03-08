@@ -3,7 +3,6 @@ import Posts from '/imports/db/posts/collection';
 import Comments from '/imports/db/comments/collection'
 
 Meteor.publish('posts', function () {
-    //return Posts.find({}, {sort:{createdAt: -1}});
     return Posts.find();
 });
 Meteor.publish('comments', function () {

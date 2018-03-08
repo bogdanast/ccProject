@@ -1,15 +1,14 @@
-import Posts from '/imports/db/posts/collection'
-import Comments from '/imports/db/comments/collection'
+import {Posts, Comments, Users} from '/imports/db'
 
 Posts.addLinks({
-    'comments':{
+    'comments': {
         type: 'one',
         collection: Comments,
         field: 'commentId',
     },
-    'user':{
+    'user': {
         type: 'one',
-        collection: Meteor.users,
+        collection: Users,
         field: 'userId',
     }
 });

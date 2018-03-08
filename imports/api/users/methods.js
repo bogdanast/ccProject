@@ -3,9 +3,9 @@ import UsersService from '/imports/api/users/userService'
 
 Meteor.methods({
     'user.register'(data) {
-        UsersService.userRegister(data);
+        UsersService.register(data);
     },
-    'user.remove' () {
-        UsersService.userRemove(this.userId);
+    'user.remove'() {
+        UsersService.remove(this.userId);
     }
 });
