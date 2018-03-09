@@ -12,6 +12,7 @@ export default class PostCreate extends React.Component {
     }
 
     handleSubmit(data) {
+        data.isApproved=false;
         Meteor.call('post.create', data);
     }
 

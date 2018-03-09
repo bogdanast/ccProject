@@ -13,11 +13,15 @@ export default class Login extends React.Component {
         const password = data.password;
         Meteor.loginWithPassword(email, password, (err) => {
             if (!err) {
-                router.go('/post/create');
+                if(Roles.userIsInRole(Meteor.userId(), 'ADMIN')){
+                    router.go('/admin/posts/approved');
+                }else{
+                router.go('/post/create');}
             } else {
                 console.log(err);
             }
         })
+
     }
 
     logout(){
