@@ -2,6 +2,8 @@ node_modules/
 ccProject/npm-debug.log
 ccProject/package.json
 ccProject/package-lock.json
-.idea
 \.idea/
+.idea
 ccProject/.idea
+
+
